@@ -2,8 +2,31 @@
 <html>
     <head>
         <title>MuQi - The Musiq Quiz App</title>
+    <style>
+        .fillPage{
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(-45deg,rgb(0, 145, 255),rgb(36, 17, 204),rgb(0, 157, 255),rgb(36, 17, 204));
+            background-size: 400% 400%;
+            position: relative;
+            animation: change 20s ease-in-out infinite;
+        }
+
+        @keyframes change {
+            0%{
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+
+    </style>
     </head>
-    <body style="background-color:rgb(70, 85, 255);">
+    <body class="fillPage">
         <img src="assets/muqi_logo.png">
     </body>
 </html>
